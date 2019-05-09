@@ -1,5 +1,5 @@
 package com.quannnguyen.webemployees;
-
+import java.util.concurrent.atomic.AtomicLong;
 //POJO- plain ol' java object
 public class Employee {
     private static final AtomicLong counter= new AtomicLong(); //thread safe( allow concerency)
