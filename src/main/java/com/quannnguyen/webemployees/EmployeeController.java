@@ -15,7 +15,7 @@ public class EmployeeController {
     // localhost:8080/data/allemployees
     @RequestMapping(value="/allemployees")
     public ResponseEntity<?> getAllEmployees(){
-        WebemployeesApplication.ourEmpList.empList.sort((e1,e2)->(e1.getFname().compareToIgnoreCase(e2.getFname())));
+        //WebemployeesApplication.ourEmpList.empList.sort((e1,e2)->(e1.getFname().compareToIgnoreCase(e2.getFname())));
         return new ResponseEntity<>(WebemployeesApplication.ourEmpList.empList, HttpStatus.OK);
     }
     @GetMapping(value="/employees/{letter}")
